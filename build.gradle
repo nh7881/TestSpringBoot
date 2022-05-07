@@ -25,5 +25,13 @@ repositories {
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.projectlombok:lombok')
+
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    
+    // lombok 의존성 사용을 위한 추가 구문, 자세한 의미 알아볼 것
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
+
+
