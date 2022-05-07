@@ -1,10 +1,10 @@
 package com.testspringboot.web.dto;
 
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
+//lombok Test
+//생성자 및 Getter 자동 생성 테스트
 public class HelloResponseDtoTest {
     @Test
     public void testLombok() {
@@ -17,7 +17,7 @@ public class HelloResponseDtoTest {
         HelloResponseDto dto = new HelloResponseDto(name, amount);
 
         //then
-        Assertions.assertThat(dto.getName()).isEqualTo(name);
-        Assertions.assertThat(dto.getAmount()).isEqualTo(amount);
+        assertThat(dto.getName()).isEqualTo(name);
+        assertThat(dto.getAmount()).isEqualTo(amount);
     }
 }

@@ -4,20 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2dc8bd7-caf3-427b-9d02-8fd7bb6923f7" name="Changes" comment="ignore 추가">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/Application.java" afterDir="false" />
+    <list default="true" id="d2dc8bd7-caf3-427b-9d02-8fd7bb6923f7" name="Changes" comment="ignore 확인 및 1일차 내용 추가&#10;기본 테스트 및 lombok 생성">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/domain/BaseTimeEntity.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/domain/posts/Posts.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/dto/HelloResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/service/PostsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/PostsApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/dto/PostsResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/dto/PostsUpdateRequestDto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/java/com/testspringboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testspringboot/web/HelloControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/testspringboot/web/dto/HelloResponseDtoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/testspringboot/web/PostApiControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testspringboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/dto/HelloResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/testspringboot/web/dto/HelloResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testspringboot/web/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testspringboot/web/HelloControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/testspringboot/web/dto/HelloResponseDtoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/testspringboot/web/dto/HelloResponseDtoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,8 +107,13 @@
     &quot;spring.configuration.checksum&quot;: &quot;b8ca00579742237a2594199f89b691f7&quot;
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="HelloControllerTest.returnHelloDto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.testspringboot.web.dto" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.PostsRepositoryTest.registerBaseTimeEntity (1)">
+    <configuration name="PostApiControllerTest.registerPosts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -116,7 +126,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.testspringboot.web.HelloControllerTest.returnHelloDto&quot;" />
+            <option value="&quot;com.testspringboot.web.PostApiControllerTest.registerPosts&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -126,7 +136,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HelloControllerTest.returnToHello" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostApiControllerTest.updatePosts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -139,7 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.testspringboot.web.HelloControllerTest.returnToHello&quot;" />
+            <option value="&quot;com.testspringboot.web.PostApiControllerTest.updatePosts&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -149,7 +159,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HelloResponseDtoTest.testLombok (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostsRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -162,7 +172,53 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.testspringboot.web.dto.HelloResponseDtoTest.testLombok&quot;" />
+            <option value="&quot;com.testspringboot.domain.posts.PostsRepositoryTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostsRepositoryTest.loadPosts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.testspringboot.domain.posts.PostsRepositoryTest.loadPosts&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostsRepositoryTest.registerBaseTimeEntity (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.testspringboot.domain.posts.PostsRepositoryTest.registerBaseTimeEntity&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,9 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HelloControllerTest.returnHelloDto" />
-        <item itemvalue="Gradle.HelloResponseDtoTest.testLombok (1)" />
-        <item itemvalue="Gradle.HelloControllerTest.returnToHello" />
+        <item itemvalue="Gradle.PostsRepositoryTest.registerBaseTimeEntity (1)" />
+        <item itemvalue="Gradle.PostApiControllerTest.updatePosts" />
+        <item itemvalue="Gradle.PostApiControllerTest.registerPosts" />
+        <item itemvalue="Gradle.PostsRepositoryTest.loadPosts" />
+        <item itemvalue="Gradle.PostsRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +259,7 @@
       <workItem from="1651753803798" duration="39000" />
       <workItem from="1651753863052" duration="464000" />
       <workItem from="1651754351876" duration="1466000" />
-      <workItem from="1651909209037" duration="3031000" />
+      <workItem from="1651909209037" duration="14017000" />
     </task>
     <task id="LOCAL-00001" summary="inital commit">
       <created>1651747537351</created>
@@ -217,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651748198113</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ignore 확인 및 1일차 내용 추가&#10;기본 테스트 및 lombok 생성">
+      <created>1651912573077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1651912573077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +293,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -237,6 +314,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inital commit" />
     <MESSAGE value="ignore 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="ignore 추가" />
+    <MESSAGE value="ignore 확인 및 1일차 내용 추가&#10;기본 테스트 및 lombok 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore 확인 및 1일차 내용 추가&#10;기본 테스트 및 lombok 생성" />
   </component>
 </project>

@@ -17,6 +17,7 @@ public class HelloControllerTest {
     @Autowired
     private MockMvc mvc;
 
+    //기본 테스트
     @Test
     public void returnToHello() throws Exception {
         String hello = "hello";
@@ -26,6 +27,7 @@ public class HelloControllerTest {
                 .andExpect(content().string(hello));
     }
 
+    //lombok Test
     @Test
     public void returnHelloDto() throws Exception{
         String name = "hello";
