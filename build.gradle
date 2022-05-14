@@ -34,6 +34,9 @@ dependencies {
     //Mustache 의존성 추가
     implementation('org.springframework.boot:spring-boot-starter-mustache')
 
+    //로그인 관련 의존성 추가
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
     // lombok 의존성 사용을 위한 추가 구문, 자세한 의미 알아볼 것
