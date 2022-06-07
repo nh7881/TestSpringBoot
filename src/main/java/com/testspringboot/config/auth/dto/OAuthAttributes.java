@@ -28,6 +28,9 @@ public class OAuthAttributes {
 
     public static OAuthAttributes of(String registrationId, String userNameAttributeName,
                                     Map<String, Object> attribute) {
+        if("naver".equals(registrationId)) {
+            return ofNaver("id", attribute);
+        }
         return ofGoogle(userNameAttributeName, attribute);
     }
 
